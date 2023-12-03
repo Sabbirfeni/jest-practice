@@ -7,6 +7,7 @@ function UserForm({ onUserAdd }) {
     const handleSubmit = e => {
         e.preventDefault();
         onUserAdd({name, email})
+        setName('')
     }
     
   return (
@@ -21,10 +22,10 @@ function UserForm({ onUserAdd }) {
                 <label htmlFor="email">Email</label>
                 <input id='email' type="text" value={email} onChange={e => {setEmail(e.target.value)}} />
             </div>
-            <button>Add User</button>
+            <button type='submit' onClick={handleSubmit}>Add User</button>
         </form>
     </div>
   )
 }
 
-export default UserForm
+export default UserForm;

@@ -15,6 +15,6 @@ test('receive a new user and show it on user list page', () => {
     user.keyboard('jane@gmail.com');
     user.click(button)
 
-    const name = screen.getByRole('cell', { name: /jane/i })
+    const name = screen.getByRole('cell', { name: ' jane' })
     expect(name).toBeInTheDocument()
 })

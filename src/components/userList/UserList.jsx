@@ -1,6 +1,7 @@
 import React from 'react'
 
 function UserList({ users }) {
+    console.log(users)
     const renderedUsers = users.map(user => {
         return (
             <tr key={user.email}>
@@ -17,7 +18,7 @@ function UserList({ users }) {
                 <th>Email</th>
             </tr>
         </thead>
-        <tbody data-testid='tbody'>
+        <tbody>
             {renderedUsers}
         </tbody>
     </table>

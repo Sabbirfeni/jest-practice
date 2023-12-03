@@ -20,6 +20,7 @@ test('Render one row per user', () => {
     const rows = within(screen.getByTestId('tbody')).getAllByRole('row')
     // Assertion: correct number of rows in the table
     expect(rows).toHaveLength(2)
+    screen.logTestingPlaygroundURL()
 })
 
 test('Render the email and name of each user', () => {
