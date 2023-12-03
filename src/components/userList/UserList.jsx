@@ -1,6 +1,6 @@
 import React from 'react'
 
-function UserList({ users}) {
+function UserList({ users }) {
     const renderedUsers = users.map(user => {
         return (
             <tr key={user.email}>
