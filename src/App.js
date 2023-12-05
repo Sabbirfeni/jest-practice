@@ -4,6 +4,7 @@ import './App.css';
 import UserForm from './components/userForm/UserForm'
 import { useState } from 'react';
 import UserList from './components/userList/UserList';
+import Test from './components/Test';
 function App() {
   const [ users, setUsers ] = useState([]);
 
@@ -12,8 +13,7 @@ function App() {
   }
   return (
     <div className="App">
-      <UserForm onUserAdd={onUserAdd}/>
-      <UserList users={users}/>
+      <Test/>
     </div>
   );
 }
