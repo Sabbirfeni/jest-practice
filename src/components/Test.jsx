@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 
-function Test() {
+function Test({ name }) {
   const [ email, setEmail ] = useState('sabbir@gmail.com')
+
+
   return (
     <form>
         <h3>Enter Data</h3>

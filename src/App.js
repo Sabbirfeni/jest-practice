@@ -13,7 +13,7 @@ function App() {
   }
   return (
     <div className="App">
-      <Test/>
+      <Test name={'Sabbir'}/>
     </div>
   );
 }
