@@ -8,6 +8,7 @@ function Login() {
     const [ password, setPassword ] = useState('')
     const [ loading, setLoading ] = useState(false)
     const [ user, setUser ] = useState({})
+    const [ data, setData ] = useState(0)
     const handleClick = (e) => {
         e.preventDefault()
         setLoading(true)
@@ -38,6 +39,9 @@ function Login() {
             </button>
             <span data-testid='error' style={{ visibility: error ? 'visible' : 'hidden'}}>Something went wrong</span>
         </form>
+
+        <h2 >{data}</h2>
+        <button onClick={() => setData(state => state + 1)}>increment</button>
     </div>
   )  
 }
